@@ -16,14 +16,16 @@
 		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
 		00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995581B128DF400A5C623 /* IOKit.framework */; };
 		00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995591B128DF400A5C623 /* IOSurface.framework */; };
-		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
-		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		B22EA7D46E384DBA8CFC9C35 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AC553660604FA39C6A6348 /* OpenCL.framework */; };
-		04640B80D8154BD8B28BC23B /* CinderOpenCV.h in Headers */ = {isa = PBXBuildFile; fileRef = F0FC002CD68242BDA336F472 /* CinderOpenCV.h */; };
-		78872AFB255842059CD29F20 /* SmallSlam_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 6E09E971EFDD475FA678C0E7 /* SmallSlam_Prefix.pch */; };
-		A8619FA32DA144A595FA70A7 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = D3390B86F9D845D5B25DA140 /* CinderApp.icns */; };
-		F947900171BA49ABBEC81E5D /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BB35305E4A84F88AAD35667 /* Resources.h */; };
 		1A55FD3A208843F19B2D43C8 /* SmallSlamApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1C84A1263C2485794A3B4CD /* SmallSlamApp.cpp */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		747E3D841C81741D002B58CB /* CoreSLAM.c in Sources */ = {isa = PBXBuildFile; fileRef = 747E3D7E1C81741D002B58CB /* CoreSLAM.c */; };
+		747E3D851C81741D002B58CB /* CoreSLAM_ext.c in Sources */ = {isa = PBXBuildFile; fileRef = 747E3D801C81741D002B58CB /* CoreSLAM_ext.c */; };
+		747E3D861C81741D002B58CB /* CoreSLAM_loop_closing.c in Sources */ = {isa = PBXBuildFile; fileRef = 747E3D811C81741D002B58CB /* CoreSLAM_loop_closing.c */; };
+		747E3D871C81741D002B58CB /* CoreSLAM_random.c in Sources */ = {isa = PBXBuildFile; fileRef = 747E3D821C81741D002B58CB /* CoreSLAM_random.c */; };
+		747E3D881C81741D002B58CB /* CoreSLAM_state.c in Sources */ = {isa = PBXBuildFile; fileRef = 747E3D831C81741D002B58CB /* CoreSLAM_state.c */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		A8619FA32DA144A595FA70A7 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = D3390B86F9D845D5B25DA140 /* CinderApp.icns */; };
+		B22EA7D46E384DBA8CFC9C35 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AC553660604FA39C6A6348 /* OpenCL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,18 +38,24 @@
 		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		00B995581B128DF400A5C623 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		00B995591B128DF400A5C623 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		0BB35305E4A84F88AAD35667 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		55AC553660604FA39C6A6348 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		6E09E971EFDD475FA678C0E7 /* SmallSlam_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = SmallSlam_Prefix.pch; sourceTree = "<group>"; };
+		747E3D7E1C81741D002B58CB /* CoreSLAM.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CoreSLAM.c; sourceTree = "<group>"; };
+		747E3D7F1C81741D002B58CB /* CoreSLAM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreSLAM.h; sourceTree = "<group>"; };
+		747E3D801C81741D002B58CB /* CoreSLAM_ext.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CoreSLAM_ext.c; sourceTree = "<group>"; };
+		747E3D811C81741D002B58CB /* CoreSLAM_loop_closing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CoreSLAM_loop_closing.c; sourceTree = "<group>"; };
+		747E3D821C81741D002B58CB /* CoreSLAM_random.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CoreSLAM_random.c; sourceTree = "<group>"; };
+		747E3D831C81741D002B58CB /* CoreSLAM_state.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CoreSLAM_state.c; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* SmallSlam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallSlam.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1C84A1263C2485794A3B4CD /* SmallSlamApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../src/SmallSlamApp.cpp; sourceTree = "<group>"; name = SmallSlamApp.cpp; };
-		0BB35305E4A84F88AAD35667 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../include/Resources.h; sourceTree = "<group>"; name = Resources.h; };
-		D3390B86F9D845D5B25DA140 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; name = CinderApp.icns; };
-		B3949C814C844275B6F66AD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; name = Info.plist; };
-		6E09E971EFDD475FA678C0E7 /* SmallSlam_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = SmallSlam_Prefix.pch; sourceTree = "<group>"; name = SmallSlam_Prefix.pch; };
-		F0FC002CD68242BDA336F472 /* CinderOpenCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-OpenCV3/include/CinderOpenCV.h"; sourceTree = "<group>"; name = CinderOpenCV.h; };
-		55AC553660604FA39C6A6348 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; name = OpenCL.framework; };
+		B3949C814C844275B6F66AD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1C84A1263C2485794A3B4CD /* SmallSlamApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = SmallSlamApp.cpp; path = ../src/SmallSlamApp.cpp; sourceTree = "<group>"; };
+		D3390B86F9D845D5B25DA140 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
+		F0FC002CD68242BDA336F472 /* CinderOpenCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CinderOpenCV.h; path = "../../Cinder/blocks/Cinder-OpenCV3/include/CinderOpenCV.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +81,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				D98C86AB74C94974ABF41645 /* OpenCV3 */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				747E3D7D1C81741D002B58CB /* CoreSLAM */,
 				C1C84A1263C2485794A3B4CD /* SmallSlamApp.cpp */,
 			);
 			name = Source;
@@ -129,30 +146,6 @@
 			name = SmallSlam;
 			sourceTree = "<group>";
 		};
-		464D520F9E0347C9ADD1D3CB /* include */ = {
-			isa = PBXGroup;
-			children = (
-				F0FC002CD68242BDA336F472 /* CinderOpenCV.h */,
-			);
-			name = include;
-			sourceTree = "<group>";
-		};
-		D98C86AB74C94974ABF41645 /* OpenCV3 */ = {
-			isa = PBXGroup;
-			children = (
-				464D520F9E0347C9ADD1D3CB /* include */,
-			);
-			name = OpenCV3;
-			sourceTree = "<group>";
-		};
-		01B97315FEAEA392516A2CEA /* Blocks */ = {
-			isa = PBXGroup;
-			children = (
-				D98C86AB74C94974ABF41645 /* OpenCV3 */,
-			);
-			name = Blocks;
-			sourceTree = "<group>";
-		};
 		29B97315FDCFA39411CA2CEA /* Headers */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +174,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		464D520F9E0347C9ADD1D3CB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				F0FC002CD68242BDA336F472 /* CinderOpenCV.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		747E3D7D1C81741D002B58CB /* CoreSLAM */ = {
+			isa = PBXGroup;
+			children = (
+				747E3D7E1C81741D002B58CB /* CoreSLAM.c */,
+				747E3D7F1C81741D002B58CB /* CoreSLAM.h */,
+				747E3D801C81741D002B58CB /* CoreSLAM_ext.c */,
+				747E3D811C81741D002B58CB /* CoreSLAM_loop_closing.c */,
+				747E3D821C81741D002B58CB /* CoreSLAM_random.c */,
+				747E3D831C81741D002B58CB /* CoreSLAM_state.c */,
+			);
+			name = CoreSLAM;
+			path = ../src/CoreSLAM;
+			sourceTree = "<group>";
+		};
+		D98C86AB74C94974ABF41645 /* OpenCV3 */ = {
+			isa = PBXGroup;
+			children = (
+				464D520F9E0347C9ADD1D3CB /* include */,
+			);
+			name = OpenCV3;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -207,6 +230,8 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SmallSlam" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -243,6 +268,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A55FD3A208843F19B2D43C8 /* SmallSlamApp.cpp in Sources */,
+				747E3D871C81741D002B58CB /* CoreSLAM_random.c in Sources */,
+				747E3D861C81741D002B58CB /* CoreSLAM_loop_closing.c in Sources */,
+				747E3D881C81741D002B58CB /* CoreSLAM_state.c in Sources */,
+				747E3D841C81741D002B58CB /* CoreSLAM.c in Sources */,
+				747E3D851C81741D002B58CB /* CoreSLAM_ext.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,17 +283,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SmallSlam_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = SmallSlam_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -305,12 +335,12 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SmallSlam_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"NDEBUG=1",
 					"$(inherited)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = SmallSlam_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -347,7 +377,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CINDER_PATH = "../../Cinder";
+				CINDER_PATH = ../../Cinder;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
 				ENABLE_TESTABILITY = YES;
@@ -357,10 +387,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = (
-					"\"$(CINDER_PATH)/include\" ../include",
-					"\"../../Cinder/blocks/Cinder-OpenCV3/include\"",
-				);
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include \"../../Cinder/blocks/Cinder-OpenCV3/include\"";
 			};
 			name = Debug;
 		};
@@ -368,7 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CINDER_PATH = "../../Cinder";
+				CINDER_PATH = ../../Cinder;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -376,10 +403,7 @@
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = (
-					"\"$(CINDER_PATH)/include\" ../include",
-					"\"../../Cinder/blocks/Cinder-OpenCV3/include\"",
-				);
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include \"../../Cinder/blocks/Cinder-OpenCV3/include\"";
 			};
 			name = Release;
 		};
