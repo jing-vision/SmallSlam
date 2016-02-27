@@ -23,6 +23,7 @@
 		747E3D861C81741D002B58CB /* CoreSLAM_loop_closing.c in Sources */ = {isa = PBXBuildFile; fileRef = 747E3D811C81741D002B58CB /* CoreSLAM_loop_closing.c */; };
 		747E3D871C81741D002B58CB /* CoreSLAM_random.c in Sources */ = {isa = PBXBuildFile; fileRef = 747E3D821C81741D002B58CB /* CoreSLAM_random.c */; };
 		747E3D881C81741D002B58CB /* CoreSLAM_state.c in Sources */ = {isa = PBXBuildFile; fileRef = 747E3D831C81741D002B58CB /* CoreSLAM_state.c */; };
+		747E3D8B1C817940002B58CB /* CoreSLAMHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 747E3D891C817940002B58CB /* CoreSLAMHelper.cpp */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		A8619FA32DA144A595FA70A7 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = D3390B86F9D845D5B25DA140 /* CinderApp.icns */; };
 		B22EA7D46E384DBA8CFC9C35 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AC553660604FA39C6A6348 /* OpenCL.framework */; };
@@ -51,6 +52,8 @@
 		747E3D811C81741D002B58CB /* CoreSLAM_loop_closing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CoreSLAM_loop_closing.c; sourceTree = "<group>"; };
 		747E3D821C81741D002B58CB /* CoreSLAM_random.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CoreSLAM_random.c; sourceTree = "<group>"; };
 		747E3D831C81741D002B58CB /* CoreSLAM_state.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CoreSLAM_state.c; sourceTree = "<group>"; };
+		747E3D891C817940002B58CB /* CoreSLAMHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CoreSLAMHelper.cpp; path = ../src/CoreSLAMHelper.cpp; sourceTree = "<group>"; };
+		747E3D8A1C817940002B58CB /* CoreSLAMHelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CoreSLAMHelper.hpp; path = ../src/CoreSLAMHelper.hpp; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* SmallSlam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallSlam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3949C814C844275B6F66AD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1C84A1263C2485794A3B4CD /* SmallSlamApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = SmallSlamApp.cpp; path = ../src/SmallSlamApp.cpp; sourceTree = "<group>"; };
@@ -94,6 +97,8 @@
 			children = (
 				747E3D7D1C81741D002B58CB /* CoreSLAM */,
 				C1C84A1263C2485794A3B4CD /* SmallSlamApp.cpp */,
+				747E3D891C817940002B58CB /* CoreSLAMHelper.cpp */,
+				747E3D8A1C817940002B58CB /* CoreSLAMHelper.hpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				747E3D881C81741D002B58CB /* CoreSLAM_state.c in Sources */,
 				747E3D841C81741D002B58CB /* CoreSLAM.c in Sources */,
 				747E3D851C81741D002B58CB /* CoreSLAM_ext.c in Sources */,
+				747E3D8B1C817940002B58CB /* CoreSLAMHelper.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

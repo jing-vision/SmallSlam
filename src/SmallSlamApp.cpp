@@ -3,17 +3,11 @@
 #include "cinder/gl/gl.h"
 
 // SLAM
-#include "CoreSLAM/CoreSLAM.h"
+#include "CoreSLAMHelper.hpp"
 
 using namespace ci;
 using namespace ci::app;
 using namespace std;
-
-struct CoreSLAM
-{
-    ts_map_t map;
-    ts_randomizer_t randomizer;
-};
 
 class SmallSlamApp : public App {
 public:
@@ -29,7 +23,7 @@ private:
 
 void SmallSlamApp::setup()
 {
-    ts_map_init(&mCoreSLAM.map);
+    mCoreSLAM.setup();
 }
 
 void SmallSlamApp::mouseDown( MouseEvent event )
